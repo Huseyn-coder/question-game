@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./assets/js/index.js" defer></script>
+    <style>
+        #start1 {
+            display: "block";
+            text-align: center;
+        }
+        button {
+            display: none;
+        }
+        #start, #exit {
+            text-align: center;
+            margin: 200px auto 20px auto;
+            display: block;
+            width: 300px;
+            height: 50px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bolder;
+            color: white;
+            background-color: #9c78f1e8;
+        }
+        #exit {
+            display: block;
+            background-color: #0a3d68;
+            margin-top: 0px;
+        } 
+        #sual-bolmesi {
+            display: "block";
+        }
+        #progress-bar {
+            border-radius: 20px;
+            height: 20px;
+            width: 1000px;
+            background-color: #efefef;
+            display: none;
+            margin:50px auto auto auto;
+        }
+        #indicator {
+            background-color: #03a636;
+            height: 100%;
+            width: 0%;
+        }
+        #start-1 #h2 {
+            margin: 50px auto auto auto;
+            width: 700px;
+            height: 140px;
+            border-radius: 1px;
+            font-size: 30px;
+            border: 2px solid red;
+            text-align: center;
+            background-color: #c20a0a;
+            color: white;
+        }
+        #sual-bolmesi #sual {
+            display: none;
+            margin: 10px auto auto auto;
+            height: 100px;
+            border-radius: 1px;
+            font-size: 30px;
+            text-align: center;
+            background-color: #3f0d8f;
+            color: white;
+        }
+        #sual-bolmesi {
+            display: none;
+        }
+        #question-1 {
+            border: 1px solid red;
+            margin: 40px auto auto auto;
+            text-align: center;
+            width: 1000px;
+            background-color: #3f0d8f;
+            padding-top: 50px;
+            color: white;
+            font-size: 50px;
+        }
+        #buttons3 {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 100px;
+        }
+        #cavab1, #cavab2, #cavab3 {
+            width: 300px;
+            height: 50px;
+            text-align: left;
+            padding-left: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #variants {
+            width: 300px;
+            border: 1px solid black;
+            text-align: left;
+            height: 40px;
+            align-items: center;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            background-color: #0a3d68;
+            padding: 10px auto 10px 30px;
+        }
+        body {
+            background-image: url(./assets/js/depositphotos_318505800-stock-photo-neon-lights-smoke-background.jpg);
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <section id="start-1">
+        <div id="h2"><h2>TOTAL POINT: <span id="faiz">0</span>%</h2></div>
+        <button id="start">START</button>
+        <button id="exit">EXIT</button>
+
+    </section>
+    <section id="sual-bolmesi">
+        <div id="progress-bar">
+            <div id="indicator"></div>
+        </div>
+        <div id="question-1">Question <span id="question-i">1</span>
+    <h1 id="sual"></h1>
+        </div>
+        <div id="buttons3">
+    <div>
+        <div id="variants">A)</div><button id="cavab1"></button>
+    </div>
+    <div>
+        <div id="variants">B)</div><button id="cavab2"></button>
+    </div>
+    <div>
+        <div id="variants">C)</div> <button id="cavab3"></button>
+    </div>
+        </div>
+</section>
+</body>
+</html>
