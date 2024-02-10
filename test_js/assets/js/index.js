@@ -92,6 +92,7 @@ function sualiGoster() {
 
 function next() {
   index++
+  document.querySelector("#indicator").style.borderRadius = "20px"
   if(index >= questions.length){
     document.querySelector("#start-1").style.display = "block"
     document.querySelector("#sual-bolmesi").style.display = "none";
@@ -115,7 +116,7 @@ document.querySelector("#start").onclick = function () {
   index = 0
     dogrular = 0
     sehvler = 0
-    document.body.style.backgroundImage = "url(./assets/neon-frame-background-empty-neon-light-sign-wallpaper_691560-5713.avif)"
+    document.body.style.backgroundImage = "url(./test_js/assets/brick-wall-room-background-neon-light-vector-27852413.jpg)"
     document.querySelector("#question-i").innerHTML = index+1
     document.querySelector("#cavab1").style.display = "block"
     document.querySelector("#cavab2").style.display = "block"
